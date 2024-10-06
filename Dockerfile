@@ -1,6 +1,6 @@
 FROM python:3.9.7-slim-buster
 
-WORKDIR .
+WORKDIR /app
 COPY . .
 
 RUN apk add --no-cache gcc libffi-dev musl-dev ffmpeg aria2 \
